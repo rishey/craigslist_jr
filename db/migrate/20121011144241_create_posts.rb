@@ -1,0 +1,14 @@
+class CreatePosts < ActiveRecord::Migration
+  def change
+    # HINT: checkout ActiveRecord::Migration.create_table
+    create_table :posts do |t|
+      t.string :title
+      t.text :description
+      t.string :email
+      t.integer :category_id
+      
+      t.timestamps
+    end
+    
+  end
+end

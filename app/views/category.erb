@@ -1,0 +1,20 @@
+<!-- These are all the posts for a category -->
+<h1>Junklist Jr.</h1>
+<table>
+  <thead>
+  </thead>
+  <tbody>
+      <p class="classy">WTF Awesome!</p>
+      <br>
+      <h3>Junklist Posts: <%= @category.name.capitalize %></h3>
+      <ul>
+
+      <% @category.posts.each do |post| %>
+        <li><a href="/post/<%= post.id%>"><%= post.title %></a></li>
+        <br>
+      <% end %>
+
+    </ul>
+  </tbody>
+</table>
+

@@ -1,0 +1,18 @@
+<h1>Junklist Jr.</h1>
+<table>
+  <thead>
+  </thead>
+  <tbody>
+      <p class="classy">WTF Awesome!</p>
+      <br>
+      <h3>Junklist Post <%= @post.id %> - Category: <%= @post.category.name.capitalize %></h3>
+      <br>
+
+      <p><h4><%= @post.title %></h4></p>
+      <p>Email: <a href="mailto:"<%= @post.email %>><%= @post.email %></a></p>
+      <p>Description:</p>
+      <p><strong><%= @post.description %></strong></p>
+      <br>
+  </tbody>
+</table>
+

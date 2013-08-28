@@ -1,0 +1,19 @@
+<!-- This is the main page with a listing of all categories -->
+<h1>Junklist Jr.</h1>
+<table>
+  <thead>
+  </thead>
+  <tbody>
+      <p class="classy">WTF Awesome!</p>
+      <br>
+      <h3>Junklist Categories</h3>
+      <ul>
+
+    <% @categories.each do |category| %>
+      <li><a href="/category/<%= category.id%>"><%= category.name.capitalize %></a></li>
+      <br>
+    <% end %>
+
+      </ul>
+  </tbody>
+</table>
